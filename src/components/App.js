@@ -7,8 +7,8 @@ const App = () => {
   const dispatch = useDispatch();
   //code here
   // const colorState = useSelector((state) => state.value);
-  const colorState = useSelector((state) => state.value);
-  const styleState = useSelector((state) => state.value);
+  const colorState = useSelector((state) => state.color);
+  const styleState = useSelector((state) => state.style);
   const changeButtonColor = () => {
     // console.log("color change");
     dispatch(changeColor(colorState === "red" ? "green" : "red"));
